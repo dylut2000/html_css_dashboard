@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+#sidebar-toggle {
+    display: none;
+}
+
 .sidebar {
     height: 100%;
     width: 240px;
@@ -52,6 +56,14 @@
     padding-left: .6rem;
 }
 
+#sidebar-toggle:checked ~ .sidebar {
+    width: auto;
+}
+
+#sidebar-toggle:checked ~ .sidebar .sidebar-header h3 span:last-child,
+#sidebar-toggle:checked ~ .sidebar li span:last-child {
+    display: none;
+}
 
 .main-content {
     position: relative;
@@ -171,7 +183,8 @@ main {
 }
 
 .activity-card,
-.summery-card {
+.summery-card,
+.bday-card {
     background-color: #ffffff;
     border-radius: 7px;
 
@@ -250,6 +263,8 @@ tbody tr:nth-child(even) {
 
  .summery-card {
      margin-bottom: 1.5rem;
+     padding-top: .5rem;
+     padding-bottom: .5rem;
  }
 
  .summery-single {
@@ -266,4 +281,44 @@ tbody tr:nth-child(even) {
 
 .summery-single h5 {
     color: var(--main-color);
+    font-size: 1.1rem;
+    margin-bottom: 0rem !important;
  }
+
+ .summery-single small {
+    font-weight: 700;
+    color: var(--text-gray);
+ }
+
+ .bday-flex {
+     display: flex;
+     align-items: center;
+     margin-bottom: .3rem;
+ }
+
+ .bday-card {
+     padding: 1rem;
+ }
+
+ .bday-img {
+     height: 60px;
+     width: 60px;
+     border-radius: 50%;
+     border: solid 3px #efefef;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-image: url(img/hardylutula.jpeg);
+     margin-left: .7rem;
+ }
+
+ .text-center {
+     text-align: center;
+ }
+
+ .text-center button {
+    background-color: var(--main-color);
+    color: #ffffff;
+    border: solid 1px var(--main-color);
+    border-radius: 4px;
+    padding: .4rem 1rem;
+}
