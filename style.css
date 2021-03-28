@@ -158,3 +158,112 @@ main {
 .card-footer a {
     color: var(--main-color);
 }
+
+.recent {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-column-gap: 1.5rem;
+}
+
+.activity-card,
+.summery-card {
+    background-color: #ffffff;
+    border-radius: 7px;
+
+}
+
+.activity-card h3 {
+    color: var(--text-gray);
+    margin: 1rem;
+}
+
+.activity-card table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.activity-card thead {
+    background: #efefef;
+    text-align: left;
+}
+
+th, td {
+   font-size: .9rem;
+   padding: 1rem 1rem; 
+   color: var(--color-dark);
+}
+
+td {
+    font-size: .8rem;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9fafc;
+}
+
+.badge {
+    padding: .2rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.badge.success {
+   background: #DEF7EC;
+   color: var(--main-color);
+}
+
+.badge.warning {
+    background: #F0F6B2;
+    color: orange;
+ }
+
+ .td-team {
+    display: flex;
+    align-items: center;
+ }
+
+ .img-1, .img-2, .img-3 {
+     height: 38px;
+     width: 38px;
+     border-radius: 38px;
+     margin-left: -15px;
+     border: solid 3px #efefef;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+
+ .img-1 {
+    background-image: url(img/hardylutula.jpeg);
+ }
+ .img-2 {
+    background-image: url(img/hardy2.jpeg);
+ }
+ .img-3 {
+    background-image: url(img/hardy3.jpeg);
+ }
+
+ .summery-card {
+     margin-bottom: 1.5rem;
+ }
+
+ .summery-single {
+     padding: .5rem 1rem;
+     display: flex;
+     align-items: center;
+ }
+
+ .summery-single span {
+   font-size: 1.5rem;
+   color: #777;
+   padding-right: 1rem;
+}
+
+.summery-single h5 {
+    color: var(--main-color);
+ }
